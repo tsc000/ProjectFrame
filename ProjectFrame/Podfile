@@ -1,0 +1,27 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+platform :ios, '7.0'
+
+target 'ProjectFrame' do
+  # Uncomment this line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for ProjectFrame
+  pod 'AFNetworking', '~> 3.1.0'
+  pod 'Masonry', '~> 1.0.2'
+  pod 'SDWebImage', '~> 3.8.2'
+  pod 'MBProgressHUD', '~> 1.0.0'
+  pod 'FMDB', '~> 2.6.2'
+  pod 'JSONModel', '~> 1.7.0'
+  
+  target 'ProjectFrameTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ProjectFrameUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
