@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1337CFF363C4934243E06319 /* libPods-ProjectFrameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3117D3FA5A18FCB1544F699 /* libPods-ProjectFrameTests.a */; };
-		59A54A241E2CA236007EE5BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54A231E2CA236007EE5BE /* ViewController.m */; };
 		59A54A371E2CA236007EE5BE /* ProjectFrameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54A361E2CA236007EE5BE /* ProjectFrameTests.m */; };
 		59A54A421E2CA236007EE5BE /* ProjectFrameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54A411E2CA236007EE5BE /* ProjectFrameUITests.m */; };
 		59A54A601E2CA39B007EE5BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54A5F1E2CA39B007EE5BE /* AppDelegate.m */; };
@@ -38,7 +37,12 @@
 		59A54B381E2CBDB5007EE5BE /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54B251E2CBDB5007EE5BE /* UIView+MJExtension.m */; };
 		59A54B3E1E2CC11F007EE5BE /* BaseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54B3D1E2CC11F007EE5BE /* BaseDataSource.m */; };
 		59A54B411E2CC20C007EE5BE /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54B401E2CC20C007EE5BE /* BaseNavigationController.m */; };
-		59A54B441E2CC27C007EE5BE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54B431E2CC27C007EE5BE /* BaseViewController.m */; };
+		59A54B471E2D9AA9007EE5BE /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54B461E2D9AA9007EE5BE /* BaseTabBarController.m */; };
+		59A54B4A1E2D9BAF007EE5BE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54B491E2D9BAF007EE5BE /* BaseViewController.m */; };
+		59A54B571E2DB80C007EE5BE /* NetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54B561E2DB80C007EE5BE /* NetworkTool.m */; };
+		59A54B5B1E2DC36F007EE5BE /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54B5A1E2DC36F007EE5BE /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		59A54B6A1E2DF10F007EE5BE /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54B691E2DF10F007EE5BE /* UIView+Extension.m */; };
+		59A54B6C1E2DF361007EE5BE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 59A54B6B1E2DF361007EE5BE /* README.md */; };
 		8AF7C4E23B0D5D57DCEC3AD1 /* libPods-ProjectFrame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 470060F865E9269A7930943B /* libPods-ProjectFrame.a */; };
 		FDD0E80A07F55FC5F58EF9DA /* libPods-ProjectFrameUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F08EBB2242CC8B3BF8FCA80 /* libPods-ProjectFrameUITests.a */; };
 /* End PBXBuildFile section */
@@ -67,8 +71,6 @@
 		470060F865E9269A7930943B /* libPods-ProjectFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectFrame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F08EBB2242CC8B3BF8FCA80 /* libPods-ProjectFrameUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectFrameUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A54A191E2CA236007EE5BE /* ProjectFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		59A54A221E2CA236007EE5BE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		59A54A231E2CA236007EE5BE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		59A54A321E2CA236007EE5BE /* ProjectFrameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectFrameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A54A361E2CA236007EE5BE /* ProjectFrameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectFrameTests.m; sourceTree = "<group>"; };
 		59A54A381E2CA236007EE5BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,8 +127,21 @@
 		59A54B3D1E2CC11F007EE5BE /* BaseDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataSource.m; sourceTree = "<group>"; };
 		59A54B3F1E2CC20C007EE5BE /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		59A54B401E2CC20C007EE5BE /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
-		59A54B421E2CC27C007EE5BE /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		59A54B431E2CC27C007EE5BE /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		59A54B451E2D9AA9007EE5BE /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		59A54B461E2D9AA9007EE5BE /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		59A54B481E2D9BAF007EE5BE /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		59A54B491E2D9BAF007EE5BE /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		59A54B551E2DB80C007EE5BE /* NetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTool.h; sourceTree = "<group>"; };
+		59A54B561E2DB80C007EE5BE /* NetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTool.m; sourceTree = "<group>"; };
+		59A54B591E2DC36F007EE5BE /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		59A54B5A1E2DC36F007EE5BE /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		59A54B5D1E2DE68E007EE5BE /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		59A54B601E2DEF00007EE5BE /* NotificationContants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationContants.h; sourceTree = "<group>"; };
+		59A54B611E2DEF15007EE5BE /* EnumerateContants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumerateContants.h; sourceTree = "<group>"; };
+		59A54B621E2DEF3B007EE5BE /* TargetConfigContants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TargetConfigContants.h; sourceTree = "<group>"; };
+		59A54B681E2DF10F007EE5BE /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		59A54B691E2DF10F007EE5BE /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		59A54B6B1E2DF361007EE5BE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		99CBAB15D98A73D73F82F664 /* Pods-ProjectFrameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectFrameUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectFrameUITests/Pods-ProjectFrameUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DC5ACD0AB9E709E18A9C42DD /* Pods-ProjectFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectFrame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectFrame/Pods-ProjectFrame.debug.xcconfig"; sourceTree = "<group>"; };
 		DE3F40A971E371D7074741E1 /* Pods-ProjectFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectFrame.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectFrame/Pods-ProjectFrame.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,8 +207,6 @@
 				59A54A571E2CA339007EE5BE /* SDKFile */,
 				59A54A581E2CA339007EE5BE /* Supporting Files */,
 				59A54A591E2CA339007EE5BE /* Vender */,
-				59A54A221E2CA236007EE5BE /* ViewController.h */,
-				59A54A231E2CA236007EE5BE /* ViewController.m */,
 			);
 			path = ProjectFrame;
 			sourceTree = "<group>";
@@ -219,6 +232,10 @@
 		59A54A4F1E2CA339007EE5BE /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				59A54B641E2DF001007EE5BE /* Category */,
+				59A54B5F1E2DEEC7007EE5BE /* Const */,
+				59A54B5C1E2DE5EC007EE5BE /* Macros */,
+				59A54B4E1E2DB48E007EE5BE /* NetworkTool */,
 			);
 			path = Expand;
 			sourceTree = "<group>";
@@ -253,6 +270,7 @@
 		59A54A581E2CA339007EE5BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				59A54B6B1E2DF361007EE5BE /* README.md */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -260,6 +278,7 @@
 		59A54A591E2CA339007EE5BE /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				59A54B581E2DC36F007EE5BE /* JSONKit */,
 				59A54AF91E2CBDB5007EE5BE /* MJRefresh */,
 			);
 			path = Vender;
@@ -408,10 +427,57 @@
 				59A54B3D1E2CC11F007EE5BE /* BaseDataSource.m */,
 				59A54B3F1E2CC20C007EE5BE /* BaseNavigationController.h */,
 				59A54B401E2CC20C007EE5BE /* BaseNavigationController.m */,
-				59A54B421E2CC27C007EE5BE /* BaseViewController.h */,
-				59A54B431E2CC27C007EE5BE /* BaseViewController.m */,
+				59A54B451E2D9AA9007EE5BE /* BaseTabBarController.h */,
+				59A54B461E2D9AA9007EE5BE /* BaseTabBarController.m */,
+				59A54B481E2D9BAF007EE5BE /* BaseViewController.h */,
+				59A54B491E2D9BAF007EE5BE /* BaseViewController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		59A54B4E1E2DB48E007EE5BE /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				59A54B551E2DB80C007EE5BE /* NetworkTool.h */,
+				59A54B561E2DB80C007EE5BE /* NetworkTool.m */,
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		59A54B581E2DC36F007EE5BE /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				59A54B591E2DC36F007EE5BE /* JSONKit.h */,
+				59A54B5A1E2DC36F007EE5BE /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		59A54B5C1E2DE5EC007EE5BE /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				59A54B5D1E2DE68E007EE5BE /* Constants.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		59A54B5F1E2DEEC7007EE5BE /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				59A54B601E2DEF00007EE5BE /* NotificationContants.h */,
+				59A54B611E2DEF15007EE5BE /* EnumerateContants.h */,
+				59A54B621E2DEF3B007EE5BE /* TargetConfigContants.h */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		59A54B641E2DF001007EE5BE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				59A54B681E2DF10F007EE5BE /* UIView+Extension.h */,
+				59A54B691E2DF10F007EE5BE /* UIView+Extension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		6BD99703CE267D68D5E28203 /* Pods */ = {
@@ -706,25 +772,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59A54A241E2CA236007EE5BE /* ViewController.m in Sources */,
-				59A54B441E2CC27C007EE5BE /* BaseViewController.m in Sources */,
 				59A54B2C1E2CBDB5007EE5BE /* MJRefreshAutoNormalFooter.m in Sources */,
 				59A54B2B1E2CBDB5007EE5BE /* MJRefreshAutoGifFooter.m in Sources */,
 				59A54B3E1E2CC11F007EE5BE /* BaseDataSource.m in Sources */,
 				59A54B311E2CBDB5007EE5BE /* MJRefreshGifHeader.m in Sources */,
+				59A54B571E2DB80C007EE5BE /* NetworkTool.m in Sources */,
 				59A54A761E2CA643007EE5BE /* main.m in Sources */,
 				59A54B281E2CBDB5007EE5BE /* MJRefreshComponent.m in Sources */,
 				59A54B2A1E2CBDB5007EE5BE /* MJRefreshHeader.m in Sources */,
 				59A54B301E2CBDB5007EE5BE /* MJRefreshBackStateFooter.m in Sources */,
 				59A54B371E2CBDB5007EE5BE /* UIScrollView+MJRefresh.m in Sources */,
+				59A54B6C1E2DF361007EE5BE /* README.md in Sources */,
+				59A54B6A1E2DF10F007EE5BE /* UIView+Extension.m in Sources */,
 				59A54B361E2CBDB5007EE5BE /* UIScrollView+MJExtension.m in Sources */,
+				59A54B4A1E2D9BAF007EE5BE /* BaseViewController.m in Sources */,
 				59A54B381E2CBDB5007EE5BE /* UIView+MJExtension.m in Sources */,
 				59A54B261E2CBDB5007EE5BE /* MJRefreshAutoFooter.m in Sources */,
 				59A54B2E1E2CBDB5007EE5BE /* MJRefreshBackGifFooter.m in Sources */,
+				59A54B471E2D9AA9007EE5BE /* BaseTabBarController.m in Sources */,
 				59A54B321E2CBDB5007EE5BE /* MJRefreshNormalHeader.m in Sources */,
 				59A54B2D1E2CBDB5007EE5BE /* MJRefreshAutoStateFooter.m in Sources */,
 				59A54B271E2CBDB5007EE5BE /* MJRefreshBackFooter.m in Sources */,
 				59A54A601E2CA39B007EE5BE /* AppDelegate.m in Sources */,
+				59A54B5B1E2DC36F007EE5BE /* JSONKit.m in Sources */,
 				59A54B351E2CBDB5007EE5BE /* MJRefreshConst.m in Sources */,
 				59A54B2F1E2CBDB5007EE5BE /* MJRefreshBackNormalFooter.m in Sources */,
 				59A54B331E2CBDB5007EE5BE /* MJRefreshStateHeader.m in Sources */,
@@ -878,6 +948,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SP9H6353S3;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ProjectFrame/Resource/Global/PrefixHeader.pch";
 				INFOPLIST_FILE = ProjectFrame/Resource/Plist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tsctsc;
@@ -891,6 +962,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SP9H6353S3;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ProjectFrame/Resource/Global/PrefixHeader.pch";
 				INFOPLIST_FILE = ProjectFrame/Resource/Plist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tsctsc;

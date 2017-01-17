@@ -5,7 +5,6 @@
 //  Created by tsc on 17/1/16.
 //  Copyright © 2017年 DMS. All rights reserved.
 //
-
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
@@ -20,5 +19,13 @@
 #import "MJRefresh.h"
 #import "MBProgressHUD.h"
 #import <JSONModel/JSONModel.h>
+#import "JSONKit.h"
+
+#import "BaseDataSource.h"
+#import "BaseNavigationController.h"
+#import "BaseViewController.h"
+#import "BaseTabBarController.h"
+
+#import "NetworkTool.h"
 
 #endif /* PrefixHeader_pch */
