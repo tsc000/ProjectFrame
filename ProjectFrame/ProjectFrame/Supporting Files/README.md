@@ -38,4 +38,17 @@
 存放例如友盟、百度等第三方SDK
 
 ## Vender
-存放第三方库
+存放第三方库,现已经添加MJRefresh和JSONKit
+
+
+
+重新建立工程的话，要将工程文件夹下所有文件删除，将示例文件夹下的目录拖进去
+再把Podfile文件拖进去，
+1 将Podfile中的名字改成工程的名字，要改四处
+2 重新配置Info.plist路径
+3 重新配置pch路径
+4 添加arc
+5 添加pods
+
+可能需要在general -> identy 下面导入plist文件
+
