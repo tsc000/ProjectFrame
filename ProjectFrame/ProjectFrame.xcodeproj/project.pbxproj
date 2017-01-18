@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1337CFF363C4934243E06319 /* libPods-ProjectFrameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3117D3FA5A18FCB1544F699 /* libPods-ProjectFrameTests.a */; };
+		596AE18C1E2F5E8600D069AF /* BaseTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 596AE18B1E2F5E8600D069AF /* BaseTabBarControllerConfig.m */; };
+		596AE1931E2F67C500D069AF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596AE1921E2F67C500D069AF /* HomeViewController.m */; };
+		596AE1961E2F6CFE00D069AF /* CYLPlusButtonSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 596AE1951E2F6CFE00D069AF /* CYLPlusButtonSubclass.m */; };
 		59A54A371E2CA236007EE5BE /* ProjectFrameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54A361E2CA236007EE5BE /* ProjectFrameTests.m */; };
 		59A54A421E2CA236007EE5BE /* ProjectFrameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54A411E2CA236007EE5BE /* ProjectFrameUITests.m */; };
 		59A54A601E2CA39B007EE5BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54A5F1E2CA39B007EE5BE /* AppDelegate.m */; };
@@ -70,6 +73,12 @@
 		34BEA1DBA196AC774317C4E1 /* Pods-ProjectFrameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectFrameTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectFrameTests/Pods-ProjectFrameTests.debug.xcconfig"; sourceTree = "<group>"; };
 		470060F865E9269A7930943B /* libPods-ProjectFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectFrame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F08EBB2242CC8B3BF8FCA80 /* libPods-ProjectFrameUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectFrameUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		596AE18A1E2F5E8600D069AF /* BaseTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarControllerConfig.h; sourceTree = "<group>"; };
+		596AE18B1E2F5E8600D069AF /* BaseTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarControllerConfig.m; sourceTree = "<group>"; };
+		596AE1911E2F67C500D069AF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		596AE1921E2F67C500D069AF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		596AE1941E2F6CFE00D069AF /* CYLPlusButtonSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusButtonSubclass.h; sourceTree = "<group>"; };
+		596AE1951E2F6CFE00D069AF /* CYLPlusButtonSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButtonSubclass.m; sourceTree = "<group>"; };
 		59A54A191E2CA236007EE5BE /* ProjectFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A54A321E2CA236007EE5BE /* ProjectFrameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectFrameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A54A361E2CA236007EE5BE /* ProjectFrameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectFrameTests.m; sourceTree = "<group>"; };
@@ -176,6 +185,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		596AE18D1E2F675600D069AF /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				596AE18E1E2F675600D069AF /* Controller */,
+				596AE18F1E2F675600D069AF /* Model */,
+				596AE1901E2F675600D069AF /* View */,
+			);
+			name = "Home(首页)";
+			path = Home;
+			sourceTree = "<group>";
+		};
+		596AE18E1E2F675600D069AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				596AE1911E2F67C500D069AF /* HomeViewController.h */,
+				596AE1921E2F67C500D069AF /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		596AE18F1E2F675600D069AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		596AE1901E2F675600D069AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		59A54A101E2CA236007EE5BE = {
 			isa = PBXGroup;
 			children = (
@@ -201,12 +244,12 @@
 		59A54A1B1E2CA236007EE5BE /* ProjectFrame */ = {
 			isa = PBXGroup;
 			children = (
-				59A54A4F1E2CA339007EE5BE /* Expand */,
 				59A54A501E2CA339007EE5BE /* Main */,
 				59A54A511E2CA339007EE5BE /* Resource */,
+				59A54A4F1E2CA339007EE5BE /* Expand */,
 				59A54A571E2CA339007EE5BE /* SDKFile */,
-				59A54A581E2CA339007EE5BE /* Supporting Files */,
 				59A54A591E2CA339007EE5BE /* Vender */,
+				59A54A581E2CA339007EE5BE /* Supporting Files */,
 			);
 			path = ProjectFrame;
 			sourceTree = "<group>";
@@ -243,6 +286,7 @@
 		59A54A501E2CA339007EE5BE /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				596AE18D1E2F675600D069AF /* Home(首页) */,
 				59A54B3B1E2CC0A3007EE5BE /* Base */,
 				59A54B391E2CBE49007EE5BE /* Login */,
 			);
@@ -423,10 +467,14 @@
 		59A54B3B1E2CC0A3007EE5BE /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				596AE1941E2F6CFE00D069AF /* CYLPlusButtonSubclass.h */,
+				596AE1951E2F6CFE00D069AF /* CYLPlusButtonSubclass.m */,
 				59A54B3C1E2CC11F007EE5BE /* BaseDataSource.h */,
 				59A54B3D1E2CC11F007EE5BE /* BaseDataSource.m */,
 				59A54B3F1E2CC20C007EE5BE /* BaseNavigationController.h */,
 				59A54B401E2CC20C007EE5BE /* BaseNavigationController.m */,
+				596AE18A1E2F5E8600D069AF /* BaseTabBarControllerConfig.h */,
+				596AE18B1E2F5E8600D069AF /* BaseTabBarControllerConfig.m */,
 				59A54B451E2D9AA9007EE5BE /* BaseTabBarController.h */,
 				59A54B461E2D9AA9007EE5BE /* BaseTabBarController.m */,
 				59A54B481E2D9BAF007EE5BE /* BaseViewController.h */,
@@ -772,6 +820,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				596AE1961E2F6CFE00D069AF /* CYLPlusButtonSubclass.m in Sources */,
 				59A54B2C1E2CBDB5007EE5BE /* MJRefreshAutoNormalFooter.m in Sources */,
 				59A54B2B1E2CBDB5007EE5BE /* MJRefreshAutoGifFooter.m in Sources */,
 				59A54B3E1E2CC11F007EE5BE /* BaseDataSource.m in Sources */,
@@ -786,6 +835,7 @@
 				59A54B6A1E2DF10F007EE5BE /* UIView+Extension.m in Sources */,
 				59A54B361E2CBDB5007EE5BE /* UIScrollView+MJExtension.m in Sources */,
 				59A54B4A1E2D9BAF007EE5BE /* BaseViewController.m in Sources */,
+				596AE18C1E2F5E8600D069AF /* BaseTabBarControllerConfig.m in Sources */,
 				59A54B381E2CBDB5007EE5BE /* UIView+MJExtension.m in Sources */,
 				59A54B261E2CBDB5007EE5BE /* MJRefreshAutoFooter.m in Sources */,
 				59A54B2E1E2CBDB5007EE5BE /* MJRefreshBackGifFooter.m in Sources */,
@@ -794,6 +844,7 @@
 				59A54B2D1E2CBDB5007EE5BE /* MJRefreshAutoStateFooter.m in Sources */,
 				59A54B271E2CBDB5007EE5BE /* MJRefreshBackFooter.m in Sources */,
 				59A54A601E2CA39B007EE5BE /* AppDelegate.m in Sources */,
+				596AE1931E2F67C500D069AF /* HomeViewController.m in Sources */,
 				59A54B5B1E2DC36F007EE5BE /* JSONKit.m in Sources */,
 				59A54B351E2CBDB5007EE5BE /* MJRefreshConst.m in Sources */,
 				59A54B2F1E2CBDB5007EE5BE /* MJRefreshBackNormalFooter.m in Sources */,
@@ -947,6 +998,7 @@
 			baseConfigurationReference = DC5ACD0AB9E709E18A9C42DD /* Pods-ProjectFrame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SP9H6353S3;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ProjectFrame/Resource/Global/PrefixHeader.pch";
 				INFOPLIST_FILE = ProjectFrame/Resource/Plist/Info.plist;
@@ -961,6 +1013,7 @@
 			baseConfigurationReference = DE3F40A971E371D7074741E1 /* Pods-ProjectFrame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SP9H6353S3;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ProjectFrame/Resource/Global/PrefixHeader.pch";
 				INFOPLIST_FILE = ProjectFrame/Resource/Plist/Info.plist;

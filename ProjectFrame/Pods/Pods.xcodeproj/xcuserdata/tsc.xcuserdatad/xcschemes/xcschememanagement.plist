@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CYLTabBarController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FMDB.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,17 +57,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3654F1EF382EE53DB43EEDDEF500E360</key>
+		<key>09B487BBFF64476963E8EB72D90FEF46</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0C1D89EAE68EF4D4ABEDB611EC44AAB0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>702A10F29405B0C3B1B465B8DC414D43</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -83,6 +88,11 @@
 			<true/>
 		</dict>
 		<key>A31F24EE15FD77242F3084701BDA3708</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C41E06BE62FCCBE5FA73FBB6B89806B2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

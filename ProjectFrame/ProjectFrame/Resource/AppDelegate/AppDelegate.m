@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CYLPlusButtonSubclass.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +19,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.rootViewController = [[BaseTabBarController alloc] init];
+    BaseTabBarControllerConfig *config = [[BaseTabBarControllerConfig alloc] init];
+    
+    [CYLPlusButtonSubclass registerPlusButton];
+    
+    self.window.rootViewController = config.tabBarController;
     
     [self.window makeKeyAndVisible];
     

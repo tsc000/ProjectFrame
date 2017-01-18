@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseTabBarController : UITabBarController
+@interface BaseTabBarController : CYLTabBarController
 
-@property (nonatomic, strong) BaseTabBarController *BaseTabBarController;
 
 @end

@@ -17,18 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-    dict[@"Mobile"] = @"13522493206";
-    dict[@"Pwd"] = @"123456";
-    
-    [[NetworkTool sharedNetworkTool] postWithServiceCode:@"User_Mobile_Login" params:dict success:^(id obj, id response) {
-        NSError *err = nil;
-        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:response options:0 error:&err];
-        
-        NSLog(@"%@",json);
-    } failure:^(NSError *error) {
-        
-    }];
+//    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+//    dict[@"Mobile"] = @"13522493206";
+//    dict[@"Pwd"] = @"123456";
+//    
+//    [[NetworkTool sharedNetworkTool] postWithServiceCode:@"User_Mobile_Login" params:dict success:^(id obj, id response) {
+//        NSError *err = nil;
+//        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:response options:0 error:&err];
+//        
+//        NSLog(@"%@",json);
+//    } failure:^(NSError *error) {
+//        
+//    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,14 +36,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-//MARK: - lazy load
-- (BaseTabBarController *)BaseTabBarController {
-    
-    if (!_BaseTabBarController) {
-        _BaseTabBarController = [[BaseTabBarController alloc] init];
-    }
-    return _BaseTabBarController;
-}
 
 @end
