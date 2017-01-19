@@ -191,6 +191,102 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59480DA31E30B8C900891C91 /* Discovery(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				59480DA41E30B8C900891C91 /* Controller */,
+				59480DA51E30B8C900891C91 /* Model */,
+				59480DA61E30B8C900891C91 /* View */,
+			);
+			name = "Discovery(发现)";
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		59480DA41E30B8C900891C91 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		59480DA51E30B8C900891C91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		59480DA61E30B8C900891C91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		59480DA71E30B8C900891C91 /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				59480DA81E30B8C900891C91 /* Controller */,
+				59480DA91E30B8C900891C91 /* Model */,
+				59480DAA1E30B8C900891C91 /* View */,
+			);
+			name = "Me(我)";
+			path = Me;
+			sourceTree = "<group>";
+		};
+		59480DA81E30B8C900891C91 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		59480DA91E30B8C900891C91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		59480DAA1E30B8C900891C91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		59480DAB1E30B8C900891C91 /* Message(消息) */ = {
+			isa = PBXGroup;
+			children = (
+				59480DAC1E30B8C900891C91 /* Controller */,
+				59480DAD1E30B8C900891C91 /* Model */,
+				59480DAE1E30B8C900891C91 /* View */,
+			);
+			name = "Message(消息)";
+			path = Message;
+			sourceTree = "<group>";
+		};
+		59480DAC1E30B8C900891C91 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		59480DAD1E30B8C900891C91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		59480DAE1E30B8C900891C91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		596AE18D1E2F675600D069AF /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +389,9 @@
 			isa = PBXGroup;
 			children = (
 				596AE18D1E2F675600D069AF /* Home(首页) */,
+				59480DA31E30B8C900891C91 /* Discovery(发现) */,
+				59480DAB1E30B8C900891C91 /* Message(消息) */,
+				59480DA71E30B8C900891C91 /* Me(我) */,
 				59A54B3B1E2CC0A3007EE5BE /* Base */,
 				59A54B391E2CBE49007EE5BE /* Login */,
 			);
