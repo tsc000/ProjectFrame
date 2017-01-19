@@ -160,7 +160,7 @@
 }
 
 + (CGFloat)constantOfPlusButtonCenterYOffsetForTabBarHeight:(CGFloat)tabBarHeight {
-    return  -10;
+    return  0;
 }
 
 @end

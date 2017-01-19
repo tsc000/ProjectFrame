@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1337CFF363C4934243E06319 /* libPods-ProjectFrameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3117D3FA5A18FCB1544F699 /* libPods-ProjectFrameTests.a */; };
+		59480D9F1E30920300891C91 /* BaseResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 59480D9E1E30920300891C91 /* BaseResponseModel.m */; };
+		59480DA21E30974200891C91 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 59480DA11E30974200891C91 /* LoginModel.m */; };
 		596AE18C1E2F5E8600D069AF /* BaseTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 596AE18B1E2F5E8600D069AF /* BaseTabBarControllerConfig.m */; };
 		596AE1931E2F67C500D069AF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596AE1921E2F67C500D069AF /* HomeViewController.m */; };
 		596AE1961E2F6CFE00D069AF /* CYLPlusButtonSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 596AE1951E2F6CFE00D069AF /* CYLPlusButtonSubclass.m */; };
@@ -73,6 +75,10 @@
 		34BEA1DBA196AC774317C4E1 /* Pods-ProjectFrameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectFrameTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectFrameTests/Pods-ProjectFrameTests.debug.xcconfig"; sourceTree = "<group>"; };
 		470060F865E9269A7930943B /* libPods-ProjectFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectFrame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F08EBB2242CC8B3BF8FCA80 /* libPods-ProjectFrameUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectFrameUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59480D9D1E30920300891C91 /* BaseResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseResponseModel.h; sourceTree = "<group>"; };
+		59480D9E1E30920300891C91 /* BaseResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseResponseModel.m; sourceTree = "<group>"; };
+		59480DA01E30974200891C91 /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		59480DA11E30974200891C91 /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
 		596AE18A1E2F5E8600D069AF /* BaseTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarControllerConfig.h; sourceTree = "<group>"; };
 		596AE18B1E2F5E8600D069AF /* BaseTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarControllerConfig.m; sourceTree = "<group>"; };
 		596AE1911E2F67C500D069AF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -460,6 +466,8 @@
 		59A54B391E2CBE49007EE5BE /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				59480DA01E30974200891C91 /* LoginModel.h */,
+				59480DA11E30974200891C91 /* LoginModel.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -479,6 +487,8 @@
 				59A54B461E2D9AA9007EE5BE /* BaseTabBarController.m */,
 				59A54B481E2D9BAF007EE5BE /* BaseViewController.h */,
 				59A54B491E2D9BAF007EE5BE /* BaseViewController.m */,
+				59480D9D1E30920300891C91 /* BaseResponseModel.h */,
+				59480D9E1E30920300891C91 /* BaseResponseModel.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -829,10 +839,12 @@
 				59A54A761E2CA643007EE5BE /* main.m in Sources */,
 				59A54B281E2CBDB5007EE5BE /* MJRefreshComponent.m in Sources */,
 				59A54B2A1E2CBDB5007EE5BE /* MJRefreshHeader.m in Sources */,
+				59480D9F1E30920300891C91 /* BaseResponseModel.m in Sources */,
 				59A54B301E2CBDB5007EE5BE /* MJRefreshBackStateFooter.m in Sources */,
 				59A54B371E2CBDB5007EE5BE /* UIScrollView+MJRefresh.m in Sources */,
 				59A54B6C1E2DF361007EE5BE /* README.md in Sources */,
 				59A54B6A1E2DF10F007EE5BE /* UIView+Extension.m in Sources */,
+				59480DA21E30974200891C91 /* LoginModel.m in Sources */,
 				59A54B361E2CBDB5007EE5BE /* UIScrollView+MJExtension.m in Sources */,
 				59A54B4A1E2D9BAF007EE5BE /* BaseViewController.m in Sources */,
 				596AE18C1E2F5E8600D069AF /* BaseTabBarControllerConfig.m in Sources */,

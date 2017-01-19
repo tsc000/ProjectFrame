@@ -7,6 +7,7 @@
 //
 
 #import "BaseTabBarController.h"
+#import "LoginModel.h"
 
 @interface BaseTabBarController ()
 
@@ -17,18 +18,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-//    dict[@"Mobile"] = @"13522493206";
-//    dict[@"Pwd"] = @"123456";
-//    
-//    [[NetworkTool sharedNetworkTool] postWithServiceCode:@"User_Mobile_Login" params:dict success:^(id obj, id response) {
-//        NSError *err = nil;
-//        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:response options:0 error:&err];
-//        
-//        NSLog(@"%@",json);
-//    } failure:^(NSError *error) {
-//        
-//    }];
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[@"Mobile"] = @"13522493206";
+    dict[@"Pwd"] = @"123456";
+    
+    [[NetworkTool sharedNetworkTool] postWithServiceCode:@"User_Mobile_Login" params:dict success:^(id obj, id response) {
+        
+        LoginModel *base =  [LoginModel mj_objectWithKeyValues:response];
+        
+        
+        
+        NSError *err = nil;
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:response options:0 error:&err];
+        
+        NSLog(@"%@",json);
+    } failure:^(NSError *error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -113,22 +113,22 @@
 
 - (NSArray *)tabBarItemsAttributesForController {
     NSDictionary *firstTabBarItemsAttributes = @{
-                                                 //                                                 CYLTabBarItemTitle : @"首页",
+                                                 CYLTabBarItemTitle : @"首页",
                                                  CYLTabBarItemImage : @"home_normal",  /* NSString and UIImage are supported*/
                                                  CYLTabBarItemSelectedImage : @"home_highlight", /* NSString and UIImage are supported*/
                                                  };
     NSDictionary *secondTabBarItemsAttributes = @{
-                                                  //                                                  CYLTabBarItemTitle : @"同城",
+                                                  CYLTabBarItemTitle : @"首页",
                                                   CYLTabBarItemImage : @"mycity_normal",
                                                   CYLTabBarItemSelectedImage : @"mycity_highlight",
                                                   };
     NSDictionary *thirdTabBarItemsAttributes = @{
-                                                 //                                                 CYLTabBarItemTitle : @"消息",
+                                                 CYLTabBarItemTitle : @"首页",
                                                  CYLTabBarItemImage : @"message_normal",
                                                  CYLTabBarItemSelectedImage : @"message_highlight",
                                                  };
     NSDictionary *fourthTabBarItemsAttributes = @{
-                                                  //                                                  CYLTabBarItemTitle : @"我的",
+                                                  CYLTabBarItemTitle : @"首页",
                                                   CYLTabBarItemImage : @"account_normal",
                                                   CYLTabBarItemSelectedImage : @"account_highlight"
                                                   };
