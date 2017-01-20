@@ -27,10 +27,6 @@
     
     [self.window makeKeyAndVisible];
     
-    
-    
-//    [self setUpNavigationBarAppearance];
-    
     return YES;
 }
 

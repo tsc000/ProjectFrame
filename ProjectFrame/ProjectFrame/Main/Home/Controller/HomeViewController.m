@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "LoginModel.h"
 
 @interface HomeViewController ()
 
@@ -19,6 +20,27 @@
     self.navigationItem.title = @"首页";
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[@"Mobile"] = @"13522493206";
+    dict[@"Pwd"] = @"123456";
+    
+    [[NetworkTool sharedNetworkTool] postWithServiceCode:@"User_Mobile_Login" params:dict success:^(id obj, id response) {
+        
+#warning        //模型嵌套模型
+        LoginModel *base =  [LoginModel mj_objectWithKeyValues:response];
+        
+        NSLog(@"%@",base.Message);
+        NSLog(@"%@",base.Data.user_mobile);
+        
+//        NSError *err = nil;
+//        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:response options:0 error:&err];
+        
+//        NSLog(@"%@",json);
+        
+    } failure:^(NSError *error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

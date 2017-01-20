@@ -8,6 +8,9 @@
 
 #import "BaseTabBarControllerConfig.h"
 #import "HomeViewController.h"
+#import "DiscoveryViewController.h"
+#import "MessageViewController.h"
+#import "MeViewController.h"
 
 @implementation BaseTabBarControllerConfig
 
@@ -83,15 +86,15 @@
     UIViewController *firstNavigationController = [[BaseNavigationController alloc]
                                                    initWithRootViewController:firstViewController];
     
-    HomeViewController *secondViewController = [[HomeViewController alloc] init];
+    DiscoveryViewController *secondViewController = [[DiscoveryViewController alloc] init];
     UIViewController *secondNavigationController = [[BaseNavigationController alloc]
                                                     initWithRootViewController:secondViewController];
     
-    HomeViewController *thirdViewController = [[HomeViewController alloc] init];
+    MessageViewController *thirdViewController = [[MessageViewController alloc] init];
     UIViewController *thirdNavigationController = [[BaseNavigationController alloc]
                                                    initWithRootViewController:thirdViewController];
     
-    HomeViewController *fourthViewController = [[HomeViewController alloc] init];
+    MeViewController *fourthViewController = [[MeViewController alloc] init];
     UIViewController *fourthNavigationController = [[BaseNavigationController alloc]
                                                     initWithRootViewController:fourthViewController];
     
@@ -118,17 +121,17 @@
                                                  CYLTabBarItemSelectedImage : @"home_highlight", /* NSString and UIImage are supported*/
                                                  };
     NSDictionary *secondTabBarItemsAttributes = @{
-                                                  CYLTabBarItemTitle : @"首页",
+                                                  CYLTabBarItemTitle : @"消息",
                                                   CYLTabBarItemImage : @"mycity_normal",
                                                   CYLTabBarItemSelectedImage : @"mycity_highlight",
                                                   };
     NSDictionary *thirdTabBarItemsAttributes = @{
-                                                 CYLTabBarItemTitle : @"首页",
+                                                 CYLTabBarItemTitle : @"发现",
                                                  CYLTabBarItemImage : @"message_normal",
                                                  CYLTabBarItemSelectedImage : @"message_highlight",
                                                  };
     NSDictionary *fourthTabBarItemsAttributes = @{
-                                                  CYLTabBarItemTitle : @"首页",
+                                                  CYLTabBarItemTitle : @"我的",
                                                   CYLTabBarItemImage : @"account_normal",
                                                   CYLTabBarItemSelectedImage : @"account_highlight"
                                                   };
