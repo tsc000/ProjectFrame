@@ -25,7 +25,8 @@
 		59480DE11E31BC9B00891C91 /* FCModelCachedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 59480DDB1E31BC9B00891C91 /* FCModelCachedObject.m */; };
 		59480DE21E31BC9B00891C91 /* FCModelDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 59480DDD1E31BC9B00891C91 /* FCModelDatabase.m */; };
 		59480DE31E31BC9B00891C91 /* FCModelNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 59480DDF1E31BC9B00891C91 /* FCModelNotificationCenter.m */; };
-		59480DE51E31BEBA00891C91 /* Logout.sql in Resources */ = {isa = PBXBuildFile; fileRef = 59480DE41E31BEBA00891C91 /* Logout.sql */; };
+		59480DE51E31BEBA00891C91 /* Discovery.sql in Resources */ = {isa = PBXBuildFile; fileRef = 59480DE41E31BEBA00891C91 /* Discovery.sql */; };
+		59480DE81E31E18400891C91 /* Discovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 59480DE71E31E18400891C91 /* Discovery.m */; };
 		596AE1931E2F67C500D069AF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596AE1921E2F67C500D069AF /* HomeViewController.m */; };
 		59A54A371E2CA236007EE5BE /* ProjectFrameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54A361E2CA236007EE5BE /* ProjectFrameTests.m */; };
 		59A54A421E2CA236007EE5BE /* ProjectFrameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54A411E2CA236007EE5BE /* ProjectFrameUITests.m */; };
@@ -118,7 +119,9 @@
 		59480DDD1E31BC9B00891C91 /* FCModelDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCModelDatabase.m; sourceTree = "<group>"; };
 		59480DDE1E31BC9B00891C91 /* FCModelNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCModelNotificationCenter.h; sourceTree = "<group>"; };
 		59480DDF1E31BC9B00891C91 /* FCModelNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCModelNotificationCenter.m; sourceTree = "<group>"; };
-		59480DE41E31BEBA00891C91 /* Logout.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Logout.sql; sourceTree = "<group>"; };
+		59480DE41E31BEBA00891C91 /* Discovery.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Discovery.sql; sourceTree = "<group>"; };
+		59480DE61E31E18400891C91 /* Discovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Discovery.h; sourceTree = "<group>"; };
+		59480DE71E31E18400891C91 /* Discovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Discovery.m; sourceTree = "<group>"; };
 		596AE1911E2F67C500D069AF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		596AE1921E2F67C500D069AF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		59A54A191E2CA236007EE5BE /* ProjectFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -242,6 +245,8 @@
 		59480DA51E30B8C900891C91 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				59480DE61E31E18400891C91 /* Discovery.h */,
+				59480DE71E31E18400891C91 /* Discovery.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -661,7 +666,7 @@
 		59A54B3B1E2CC0A3007EE5BE /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				59480DE41E31BEBA00891C91 /* Logout.sql */,
+				59480DE41E31BEBA00891C91 /* Discovery.sql */,
 				59480DD51E31B4AA00891C91 /* Login.sql */,
 				59480DBB1E31ADAC00891C91 /* BaseViewController */,
 				59480DB81E31ADAC00891C91 /* BaseModel */,
@@ -857,7 +862,7 @@
 			files = (
 				59A54A6C1E2CA626007EE5BE /* LaunchScreen.storyboard in Resources */,
 				59A54A661E2CA3F5007EE5BE /* Info.plist in Resources */,
-				59480DE51E31BEBA00891C91 /* Logout.sql in Resources */,
+				59480DE51E31BEBA00891C91 /* Discovery.sql in Resources */,
 				59A54A631E2CA3C2007EE5BE /* Assets.xcassets in Resources */,
 				59A54B341E2CBDB5007EE5BE /* MJRefresh.bundle in Resources */,
 				59480DD61E31B4AA00891C91 /* Login.sql in Resources */,
@@ -1015,6 +1020,7 @@
 				59A54B2C1E2CBDB5007EE5BE /* MJRefreshAutoNormalFooter.m in Sources */,
 				59A54B2B1E2CBDB5007EE5BE /* MJRefreshAutoGifFooter.m in Sources */,
 				59A54B311E2CBDB5007EE5BE /* MJRefreshGifHeader.m in Sources */,
+				59480DE81E31E18400891C91 /* Discovery.m in Sources */,
 				59A54B571E2DB80C007EE5BE /* NetworkTool.m in Sources */,
 				59480DB41E31923000891C91 /* MessageViewController.m in Sources */,
 				59A54A761E2CA643007EE5BE /* main.m in Sources */,

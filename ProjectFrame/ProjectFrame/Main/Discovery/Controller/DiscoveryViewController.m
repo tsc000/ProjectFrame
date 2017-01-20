@@ -7,6 +7,7 @@
 //
 
 #import "DiscoveryViewController.h"
+#import "Discovery.h"
 
 @interface DiscoveryViewController ()
 
@@ -23,10 +24,36 @@
     
     [BaseDataBaseModel initDataBase:@"test" dataSheets:@[@"Login"] operation:nil];
     
-    [BaseDataBaseModel initDataBase:@"test1" dataSheets:@[@"Logout"] operation:nil];
+    [BaseDataBaseModel initDataBase:@"test1" dataSheets:@[@"Discovery"] operation:nil];
     
+    NSMutableDictionary *dict=[NSMutableDictionary dictionary];
     
+    dict[@"Type"] = @"1";
     
+    dict[@"Keyword"] = @"小";
+
+    [[NetworkTool sharedNetworkTool] postWithServiceCode:@"Search_Keyword" params:dict success:^(id obj, id response) {
+        
+        [Discovery setupTransform];
+        
+        Discovery *discovery = [Discovery mj_objectWithKeyValues:response];
+        
+//        NSError *err = nil;
+//        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:response options:0 error:&err];
+//        
+//        NSLog(@"%@",json);
+        
+        
+        for (DiscoveryDataModel *data in discovery.Datas) {
+            NSString *goods_url = data.goods_url;
+            NSString *goods_pic = data.goods_pic;
+            NSString *goods_name = data.goods_name;
+            NSLog(@"text=%@, name=%@, icon=%@", goods_url, goods_pic, goods_name);
+        }
+
+    } failure:^(NSError *error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

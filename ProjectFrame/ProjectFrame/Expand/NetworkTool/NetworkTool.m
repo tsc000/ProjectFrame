@@ -294,6 +294,8 @@ static id _instance;
 - (void)POST:(NSString *)URLString parameters:(id)parameters success:(Success)success failure:(failure)failure {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    [manager.requestSerializer setCachePolicy:NSURLRequestReloadIgnoringLocalCacheData];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", nil];
     
     [manager POST:URLString parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
                 success(nil,responseObject);
