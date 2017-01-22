@@ -20,17 +20,17 @@
 		59480DCE1E31ADAC00891C91 /* BaseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 59480DC61E31ADAC00891C91 /* BaseDataSource.m */; };
 		59480DCF1E31ADAC00891C91 /* CYLPlusButtonSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 59480DC81E31ADAC00891C91 /* CYLPlusButtonSubclass.m */; };
 		59480DD21E31AE6600891C91 /* BaseDataBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 59480DD11E31AE6600891C91 /* BaseDataBaseModel.m */; };
-		59480DD61E31B4AA00891C91 /* Login.sql in Resources */ = {isa = PBXBuildFile; fileRef = 59480DD51E31B4AA00891C91 /* Login.sql */; };
 		59480DE01E31BC9B00891C91 /* FCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 59480DD91E31BC9B00891C91 /* FCModel.m */; };
 		59480DE11E31BC9B00891C91 /* FCModelCachedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 59480DDB1E31BC9B00891C91 /* FCModelCachedObject.m */; };
 		59480DE21E31BC9B00891C91 /* FCModelDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 59480DDD1E31BC9B00891C91 /* FCModelDatabase.m */; };
 		59480DE31E31BC9B00891C91 /* FCModelNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 59480DDF1E31BC9B00891C91 /* FCModelNotificationCenter.m */; };
-		59480DE51E31BEBA00891C91 /* Discovery.sql in Resources */ = {isa = PBXBuildFile; fileRef = 59480DE41E31BEBA00891C91 /* Discovery.sql */; };
 		59480DE81E31E18400891C91 /* Discovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 59480DE71E31E18400891C91 /* Discovery.m */; };
 		5950DB621E345A4F00F594B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5950DB611E345A4F00F594B9 /* AppDelegate.m */; };
 		5950DB6B1E345B3900F594B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5950DB691E345B3900F594B9 /* LaunchScreen.storyboard */; };
 		5950DB6C1E345B3900F594B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5950DB6A1E345B3900F594B9 /* Main.storyboard */; };
 		5950DB6E1E345B5F00F594B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5950DB6D1E345B5F00F594B9 /* main.m */; };
+		5950DB711E349D0D00F594B9 /* Discovery.sql in Resources */ = {isa = PBXBuildFile; fileRef = 5950DB6F1E349D0D00F594B9 /* Discovery.sql */; };
+		5950DB721E349D0D00F594B9 /* Login.sql in Resources */ = {isa = PBXBuildFile; fileRef = 5950DB701E349D0D00F594B9 /* Login.sql */; };
 		596AE1931E2F67C500D069AF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596AE1921E2F67C500D069AF /* HomeViewController.m */; };
 		59A54A371E2CA236007EE5BE /* ProjectFrameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54A361E2CA236007EE5BE /* ProjectFrameTests.m */; };
 		59A54A421E2CA236007EE5BE /* ProjectFrameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54A411E2CA236007EE5BE /* ProjectFrameUITests.m */; };
@@ -110,7 +110,6 @@
 		59480DC81E31ADAC00891C91 /* CYLPlusButtonSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButtonSubclass.m; sourceTree = "<group>"; };
 		59480DD01E31AE6600891C91 /* BaseDataBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataBaseModel.h; sourceTree = "<group>"; };
 		59480DD11E31AE6600891C91 /* BaseDataBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataBaseModel.m; sourceTree = "<group>"; };
-		59480DD51E31B4AA00891C91 /* Login.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Login.sql; sourceTree = "<group>"; };
 		59480DD81E31BC9B00891C91 /* FCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCModel.h; sourceTree = "<group>"; };
 		59480DD91E31BC9B00891C91 /* FCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCModel.m; sourceTree = "<group>"; };
 		59480DDA1E31BC9B00891C91 /* FCModelCachedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCModelCachedObject.h; sourceTree = "<group>"; };
@@ -119,7 +118,6 @@
 		59480DDD1E31BC9B00891C91 /* FCModelDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCModelDatabase.m; sourceTree = "<group>"; };
 		59480DDE1E31BC9B00891C91 /* FCModelNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCModelNotificationCenter.h; sourceTree = "<group>"; };
 		59480DDF1E31BC9B00891C91 /* FCModelNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCModelNotificationCenter.m; sourceTree = "<group>"; };
-		59480DE41E31BEBA00891C91 /* Discovery.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Discovery.sql; sourceTree = "<group>"; };
 		59480DE61E31E18400891C91 /* Discovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Discovery.h; sourceTree = "<group>"; };
 		59480DE71E31E18400891C91 /* Discovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Discovery.m; sourceTree = "<group>"; };
 		5950DB601E345A4F00F594B9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -128,6 +126,8 @@
 		5950DB691E345B3900F594B9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5950DB6A1E345B3900F594B9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5950DB6D1E345B5F00F594B9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5950DB6F1E349D0D00F594B9 /* Discovery.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Discovery.sql; sourceTree = "<group>"; };
+		5950DB701E349D0D00F594B9 /* Login.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Login.sql; sourceTree = "<group>"; };
 		596AE1911E2F67C500D069AF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		596AE1921E2F67C500D069AF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		59A54A191E2CA236007EE5BE /* ProjectFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,6 +225,8 @@
 		59480DA31E30B8C900891C91 /* Discovery(发现) */ = {
 			isa = PBXGroup;
 			children = (
+				5950DB6F1E349D0D00F594B9 /* Discovery.sql */,
+				5950DB701E349D0D00F594B9 /* Login.sql */,
 				59480DA41E30B8C900891C91 /* Controller */,
 				59480DA51E30B8C900891C91 /* Model */,
 				59480DA61E30B8C900891C91 /* View */,
@@ -658,8 +660,6 @@
 		59A54B3B1E2CC0A3007EE5BE /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				59480DE41E31BEBA00891C91 /* Discovery.sql */,
-				59480DD51E31B4AA00891C91 /* Login.sql */,
 				59480DBB1E31ADAC00891C91 /* BaseViewController */,
 				59480DB81E31ADAC00891C91 /* BaseModel */,
 				59480DC41E31ADAC00891C91 /* Other */,
@@ -854,11 +854,11 @@
 			files = (
 				5950DB6C1E345B3900F594B9 /* Main.storyboard in Resources */,
 				59A54A661E2CA3F5007EE5BE /* Info.plist in Resources */,
-				59480DE51E31BEBA00891C91 /* Discovery.sql in Resources */,
 				59A54A631E2CA3C2007EE5BE /* Assets.xcassets in Resources */,
+				5950DB721E349D0D00F594B9 /* Login.sql in Resources */,
 				5950DB6B1E345B3900F594B9 /* LaunchScreen.storyboard in Resources */,
 				59A54B341E2CBDB5007EE5BE /* MJRefresh.bundle in Resources */,
-				59480DD61E31B4AA00891C91 /* Login.sql in Resources */,
+				5950DB711E349D0D00F594B9 /* Discovery.sql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

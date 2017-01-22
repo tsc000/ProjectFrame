@@ -10,19 +10,25 @@
 
 @implementation Discovery
 
-+ (void)setupTransform
-{
-    [[self class] mj_setupObjectClassInArray:^NSDictionary *{
-        return @{ @"Data" : @"DiscoveryDataModel"
-                  };
-    }];
-    
-//    [[self class] mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
-//        return @{
-//                 @"Datas" : @"Data"
-//                 };
-//    }];
++ (NSDictionary *)mj_objectClassInArray{
+    return @{ @"Data" : @"DiscoveryDataModel"
+              };
 }
+
+
+//+ (void)setupTransform
+//{
+//    [[self class] mj_setupObjectClassInArray:^NSDictionary *{
+//        return @{ @"Data" : @"DiscoveryDataModel"
+//                  };
+//    }];
+//    
+////    [[self class] mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
+////        return @{
+////                 @"Datas" : @"Data"
+////                 };
+////    }];
+//}
 
 @end
 
@@ -30,6 +36,16 @@
 
 - (void)setValue:(id)value forKey:(NSString *)key {
     [super setValue:value forKey:key];
+}
+
+- (id)valueForKey:(NSString *)key {
+    
+    if (key) {
+        return [super valueForKey:key];
+    }
+    else
+        return nil;
+    
 }
 @end
 

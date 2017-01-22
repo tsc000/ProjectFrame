@@ -14,11 +14,9 @@
 
 @property (nonatomic, strong) NSArray *Data;
 
-+ (void)setupTransform;
-
 @end
 
-@interface DiscoveryDataModel : NSObject
+@interface DiscoveryDataModel : FCModel
 
 @property (nonatomic, copy) NSString *goods_name;
 @property (nonatomic, copy) NSString *goods_pic;

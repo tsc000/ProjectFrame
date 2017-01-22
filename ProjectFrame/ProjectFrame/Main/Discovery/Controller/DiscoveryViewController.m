@@ -21,11 +21,7 @@
     self.navigationItem.title = @"消息";
     
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    [BaseDataBaseModel initDataBase:@"test" dataSheets:@[@"Login"] operation:nil];
-    
-    [BaseDataBaseModel initDataBase:@"test1" dataSheets:@[@"Discovery"] operation:nil];
-    
+
     NSMutableDictionary *dict=[NSMutableDictionary dictionary];
     
     dict[@"Type"] = @"1";
@@ -33,23 +29,31 @@
     dict[@"Keyword"] = @"小";
 
     [[NetworkTool sharedNetworkTool] postWithServiceCode:@"Search_Keyword" params:dict success:^(id obj, id response) {
-        
-        [Discovery setupTransform];
-        
+
         Discovery *discovery = [Discovery mj_objectWithKeyValues:response];
+
+        [discovery.Data enumerateObjectsUsingBlock:^(DiscoveryDataModel *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            
+            DiscoveryDataModel *dataModel = [DiscoveryDataModel instanceWithPrimaryKey:obj.goods_url];
+
+            [dataModel save:^{
+
+                dataModel.goods_name = obj.goods_name;
+                
+                dataModel.goods_pic = obj.goods_pic;
+                
+                dataModel.goods_price = obj.goods_price;
+
+                dataModel.goods_url = obj.goods_url;
+            }];
+        }];
         
-//        NSError *err = nil;
-//        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:response options:0 error:&err];
-//        
-//        NSLog(@"%@",json);
-        
-        
-        for (DiscoveryDataModel *data in discovery.Data) {
-            NSString *goods_url = data.goods_url;
-            NSString *goods_pic = data.goods_pic;
-            NSString *goods_name = data.goods_name;
-            NSLog(@"text=%@, name=%@, icon=%@", goods_url, goods_pic, goods_name);
-        }
+//        for (DiscoveryDataModel *data in discovery.Data) {
+//            NSString *goods_url = data.goods_url;
+//            NSString *goods_pic = data.goods_pic;
+//            NSString *goods_name = data.goods_name;
+//            NSLog(@"text=%@, name=%@, icon=%@", goods_url, goods_pic, goods_name);
+//        }
 
     } failure:^(NSError *error) {
         
