@@ -12,13 +12,13 @@
 
 @interface Discovery : BaseResponseModel
 
-@property (nonatomic, strong) NSArray *Datas;
+@property (nonatomic, strong) NSArray *Data;
 
 + (void)setupTransform;
 
 @end
 
-@interface DiscoveryDataModel : FCModel
+@interface DiscoveryDataModel : NSObject
 
 @property (nonatomic, copy) NSString *goods_name;
 @property (nonatomic, copy) NSString *goods_pic;

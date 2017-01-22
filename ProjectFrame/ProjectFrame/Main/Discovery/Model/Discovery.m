@@ -13,20 +13,23 @@
 + (void)setupTransform
 {
     [[self class] mj_setupObjectClassInArray:^NSDictionary *{
-        return @{ @"Datas" : @"DiscoveryDataModel"
+        return @{ @"Data" : @"DiscoveryDataModel"
                   };
     }];
     
-    [[self class] mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
-        return @{
-                 @"Datas" : @"Data"
-                 };
-    }];
+//    [[self class] mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
+//        return @{
+//                 @"Datas" : @"Data"
+//                 };
+//    }];
 }
 
 @end
+
 @implementation DiscoveryDataModel
 
-
+- (void)setValue:(id)value forKey:(NSString *)key {
+    [super setValue:value forKey:key];
+}
 @end
 

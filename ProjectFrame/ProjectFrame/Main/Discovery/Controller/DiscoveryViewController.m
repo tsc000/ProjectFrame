@@ -44,7 +44,7 @@
 //        NSLog(@"%@",json);
         
         
-        for (DiscoveryDataModel *data in discovery.Datas) {
+        for (DiscoveryDataModel *data in discovery.Data) {
             NSString *goods_url = data.goods_url;
             NSString *goods_pic = data.goods_pic;
             NSString *goods_name = data.goods_name;
