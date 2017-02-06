@@ -9,11 +9,11 @@
 #ifndef CommonContants_h
 #define CommonContants_h
 
-#define REDIRECT_URL        @"www.sina.com"
+#define REDIRECT_URL        @"www.sina.coms"
 
 /*友盟**/
-//#define USHARE_DEMO_APPKEY  @"577f8750e0f55af488000810"
-#define USHARE_DEMO_APPKEY  @"5861e5daf5ade41326001eab"
+#define USHARE_DEMO_APPKEY  @"577f8750e0f55af488000810"
+//#define USHARE_DEMO_APPKEY  @"5861e5daf5ade41326001eab"
 
 /*Sina**/
 #define SINA_APPKEY         @"3260836599"

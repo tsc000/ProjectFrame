@@ -44,6 +44,7 @@
     return YES;
 }
 
+//#if __IPHONE_OS_VERSION_MAX_ALLOWED > 100000
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
     BOOL result = [[UMSocialManager defaultManager] handleOpenURL:url];
     if (!result) {
@@ -52,9 +53,15 @@
     return result;
 }
 
+//#endif
+
 /**/
  - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    return true;
+     BOOL result = [[UMSocialManager defaultManager] handleOpenURL:url];
+     if (!result) {
+         // 其他如支付等SDK的回调
+     }
+     return result;
 }
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
@@ -65,7 +72,6 @@
     }
     return result;
 }
-
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -127,10 +133,12 @@
 - (void)configUSharePlatforms{
     
     /* 设置新浪的appKey和appSecret */
-    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Sina appKey:@"3921700954"  appSecret:@"04b48b094faeb16683c32669824ebdad" redirectURL:@"https://sns.whalecloud.com/sina2/callback"];
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Sina appKey: SINA_APPKEY  appSecret:SINA_APPSECRET redirectURL:REDIRECT_URL];
     
-//    /* 设置新浪的appKey和appSecret */
-//    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Sina appKey: SINA_APPKEY  appSecret:SINA_APPSECRET redirectURL:REDIRECT_URL];
+    /* 设置新浪的appKey和appSecret */
+//    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Sina appKey:@"3921700954"  appSecret:@"04b48b094faeb16683c32669824ebdad" redirectURL:@"https://sns.whalecloud.com/sina2/callback"];
+    
+
 }
 
 @end
