@@ -51,4 +51,3 @@
 5 添加pods
 
 可能需要在general -> identy 下面导入plist文件
-

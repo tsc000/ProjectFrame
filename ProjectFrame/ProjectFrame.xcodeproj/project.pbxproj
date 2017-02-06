@@ -504,8 +504,8 @@
 			isa = PBXGroup;
 			children = (
 				59A54A641E2CA3F5007EE5BE /* Plist */,
-				5950DB681E345B3900F594B9 /* Other */,
 				59A54A611E2CA3C2007EE5BE /* ImageAssets */,
+				5950DB681E345B3900F594B9 /* Other */,
 			);
 			path = Resource;
 			sourceTree = "<group>";

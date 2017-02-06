@@ -48,12 +48,9 @@
             }];
         }];
         
-//        for (DiscoveryDataModel *data in discovery.Data) {
-//            NSString *goods_url = data.goods_url;
-//            NSString *goods_pic = data.goods_pic;
-//            NSString *goods_name = data.goods_name;
-//            NSLog(@"text=%@, name=%@, icon=%@", goods_url, goods_pic, goods_name);
-//        }
+        for (DiscoveryDataModel *data in discovery.Data) {
+            NSLog(@"text = %@, name = %@, icon = %@", data.goods_url, data.goods_pic, data.goods_name);
+        }
 
     } failure:^(NSError *error) {
         

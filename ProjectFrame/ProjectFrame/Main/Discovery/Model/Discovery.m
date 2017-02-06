@@ -10,34 +10,16 @@
 
 @implementation Discovery
 
+#warning 指定模型数组中模型的类型
 + (NSDictionary *)mj_objectClassInArray{
-    return @{ @"Data" : @"DiscoveryDataModel"
-              };
+    return @{ @"Data" : @"DiscoveryDataModel"};
 }
-
-
-//+ (void)setupTransform
-//{
-//    [[self class] mj_setupObjectClassInArray:^NSDictionary *{
-//        return @{ @"Data" : @"DiscoveryDataModel"
-//                  };
-//    }];
-//    
-////    [[self class] mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
-////        return @{
-////                 @"Datas" : @"Data"
-////                 };
-////    }];
-//}
 
 @end
 
 @implementation DiscoveryDataModel
 
-- (void)setValue:(id)value forKey:(NSString *)key {
-    [super setValue:value forKey:key];
-}
-
+#warning 重写这个方法是因为在FCModel里面初始化时有个nil的key，不清楚为什么
 - (id)valueForKey:(NSString *)key {
     
     if (key) {
