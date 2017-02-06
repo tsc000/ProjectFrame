@@ -32,10 +32,6 @@
         
         NSLog(@"%@-----%@",base.Message,base.Data.user_mobile);
         
-//        NSError *err = nil;
-//        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:response options:0 error:&err];
-//        NSLog(@"%@",json);
-        
     } failure:^(NSError *error) {
         
     }];

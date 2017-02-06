@@ -17,14 +17,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"发现";
+    self.navigationItem.title = @"消息";
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIButton *qqBtn=[UIButton new];
+    qqBtn.tag=1001;
+    qqBtn.backgroundColor = [UIColor redColor];
+    [qqBtn setTitle:@"QQ空间分享" forState:UIControlStateNormal];
+    [qqBtn addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:qqBtn];
+    [qqBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.view.mas_left).with.offset(50);
+        make.right.mas_equalTo(self.view.mas_right).with.offset(-50);
+        make.centerY.mas_equalTo(self.view).with.offset(0);
+        make.height.mas_equalTo(40);
+    }];
+ 
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)btnPressed:(id)sender {
+
+    //创建分享消息对象
+    UMSocialMessageObject *messageObject = [UMSocialMessageObject messageObject];
+    //设置文本
+    messageObject.text = @"欢迎使用【友盟+】社会化组件U-Share";
+    
+    [UMSocialUIManager showShareMenuViewInWindowWithPlatformSelectionBlock:^(UMSocialPlatformType platformType, NSDictionary *userInfo) {
+
+        
+        [[UMSocialManager defaultManager] shareToPlatform:platformType messageObject:messageObject currentViewController:self completion:^(id data, NSError *error) {
+            
+        }];
+        
+    }];
 }
 
 /*

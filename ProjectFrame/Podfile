@@ -9,7 +9,8 @@ target 'ProjectFrame' do
   # Pods for ProjectFrame
   pod 'AFNetworking', '~> 3.1.0'
   pod 'CYLTabBarController', '~> 1.10.0'
-#  pod 'FCModel', '~> 0.2.0'
+
+#  pod 'UMengUShare', '~> 6.2.2'
 
   pod 'Masonry', '~> 1.0.2'
   pod 'SDWebImage', '~> 3.8.2'
@@ -17,6 +18,7 @@ target 'ProjectFrame' do
   pod 'FMDB', '~> 2.6.2'
   pod 'JSONModel', '~> 1.7.0'
   pod 'MJExtension', '~> 3.0.13'
+  
   
   target 'ProjectFrameTests' do
     inherit! :search_paths
