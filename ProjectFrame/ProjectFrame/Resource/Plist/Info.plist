@@ -107,6 +107,9 @@
 		<string>mqzoneopensdkapi</string>
 		<string>mqqbrowser</string>
 		<string>mttbrowser</string>
+        <!-- 支付宝 URL Scheme 白名单-->
+        <string>alipay</string>
+        <string>alipayshare</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
