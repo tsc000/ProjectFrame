@@ -49,5 +49,7 @@
 3 重新配置pch路径
 4 添加arc
 5 添加pods
+6 支付宝分享要关闭bitcode
 
-可能需要在general -> identy 下面导入plist文件
+
+可能需要在general -> identity 下面导入plist文件
