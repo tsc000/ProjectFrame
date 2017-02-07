@@ -54,6 +54,8 @@
 		595549B31E4843A000CDC8A7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 595549B21E4843A000CDC8A7 /* libz.tbd */; };
 		595549B51E4843FC00CDC8A7 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595549B41E4843FC00CDC8A7 /* ImageIO.framework */; };
 		596AE1931E2F67C500D069AF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596AE1921E2F67C500D069AF /* HomeViewController.m */; };
+		5987D9261E495CDB000921EB /* libAPOpenSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5987D9231E495CDB000921EB /* libAPOpenSdk.a */; };
+		5987D9271E495CDB000921EB /* libSocialAlipayShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5987D9241E495CDB000921EB /* libSocialAlipayShare.a */; };
 		59A54A371E2CA236007EE5BE /* ProjectFrameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54A361E2CA236007EE5BE /* ProjectFrameTests.m */; };
 		59A54A421E2CA236007EE5BE /* ProjectFrameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54A411E2CA236007EE5BE /* ProjectFrameUITests.m */; };
 		59A54A631E2CA3C2007EE5BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59A54A621E2CA3C2007EE5BE /* Assets.xcassets */; };
@@ -193,6 +195,11 @@
 		595549B61E4848B900CDC8A7 /* CommonContants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonContants.h; sourceTree = "<group>"; };
 		596AE1911E2F67C500D069AF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		596AE1921E2F67C500D069AF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		5987D9211E495CDB000921EB /* APOpenAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOpenAPI.h; sourceTree = "<group>"; };
+		5987D9221E495CDB000921EB /* APOpenAPIObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOpenAPIObject.h; sourceTree = "<group>"; };
+		5987D9231E495CDB000921EB /* libAPOpenSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAPOpenSdk.a; sourceTree = "<group>"; };
+		5987D9241E495CDB000921EB /* libSocialAlipayShare.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialAlipayShare.a; sourceTree = "<group>"; };
+		5987D9251E495CDB000921EB /* UMSocialAlipayHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialAlipayHandler.h; sourceTree = "<group>"; };
 		59A54A191E2CA236007EE5BE /* ProjectFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A54A321E2CA236007EE5BE /* ProjectFrameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectFrameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A54A361E2CA236007EE5BE /* ProjectFrameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectFrameTests.m; sourceTree = "<group>"; };
@@ -270,11 +277,13 @@
 				595549AB1E48436900CDC8A7 /* CoreGraphics.framework in Frameworks */,
 				595549A91E48435E00CDC8A7 /* libsqlite3.tbd in Frameworks */,
 				5955499D1E48428200CDC8A7 /* libWeiboSDK.a in Frameworks */,
+				5987D9261E495CDB000921EB /* libAPOpenSdk.a in Frameworks */,
 				595549991E48428200CDC8A7 /* libSocialQQ.a in Frameworks */,
 				595549A51E48428200CDC8A7 /* UMSocialNetwork.framework in Frameworks */,
 				595549A71E48428200CDC8A7 /* UShareUI.framework in Frameworks */,
 				595549A11E48428200CDC8A7 /* libWeChatSDK.a in Frameworks */,
 				5955499A1E48428200CDC8A7 /* TencentOpenAPI.framework in Frameworks */,
+				5987D9271E495CDB000921EB /* libSocialAlipayShare.a in Frameworks */,
 				595549A01E48428200CDC8A7 /* libSocialWeChat.a in Frameworks */,
 				8AF7C4E23B0D5D57DCEC3AD1 /* libPods-ProjectFrame.a in Frameworks */,
 				5955499F1E48428200CDC8A7 /* libSocialUniqueId.a in Frameworks */,
@@ -482,6 +491,7 @@
 		595549711E48428200CDC8A7 /* SocialLibraries */ = {
 			isa = PBXGroup;
 			children = (
+				5987D9201E495CDB000921EB /* AlipayShare */,
 				595549721E48428200CDC8A7 /* QQ */,
 				595549771E48428200CDC8A7 /* Sina */,
 				595549871E48428200CDC8A7 /* UniqueId */,
@@ -597,6 +607,18 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5987D9201E495CDB000921EB /* AlipayShare */ = {
+			isa = PBXGroup;
+			children = (
+				5987D9211E495CDB000921EB /* APOpenAPI.h */,
+				5987D9221E495CDB000921EB /* APOpenAPIObject.h */,
+				5987D9231E495CDB000921EB /* libAPOpenSdk.a */,
+				5987D9241E495CDB000921EB /* libSocialAlipayShare.a */,
+				5987D9251E495CDB000921EB /* UMSocialAlipayHandler.h */,
+			);
+			path = AlipayShare;
 			sourceTree = "<group>";
 		};
 		59A54A101E2CA236007EE5BE = {
@@ -1370,6 +1392,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SP9H6353S3;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ProjectFrame/SDKFile/UMSocial/SocialLibraries/QQ",
@@ -1386,6 +1409,7 @@
 					"$(PROJECT_DIR)/ProjectFrame/SDKFile/UMSocial/SocialLibraries/Sina",
 					"$(PROJECT_DIR)/ProjectFrame/SDKFile/UMSocial/SocialLibraries/UniqueId",
 					"$(PROJECT_DIR)/ProjectFrame/SDKFile/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/ProjectFrame/SDKFile/UMSocial/SocialLibraries/AlipayShare",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tsctsc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1402,6 +1426,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SP9H6353S3;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ProjectFrame/SDKFile/UMSocial/SocialLibraries/QQ",
@@ -1418,6 +1443,7 @@
 					"$(PROJECT_DIR)/ProjectFrame/SDKFile/UMSocial/SocialLibraries/Sina",
 					"$(PROJECT_DIR)/ProjectFrame/SDKFile/UMSocial/SocialLibraries/UniqueId",
 					"$(PROJECT_DIR)/ProjectFrame/SDKFile/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/ProjectFrame/SDKFile/UMSocial/SocialLibraries/AlipayShare",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tsctsc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
