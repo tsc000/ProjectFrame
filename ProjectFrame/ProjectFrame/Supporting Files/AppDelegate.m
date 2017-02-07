@@ -33,14 +33,12 @@
     
     [self.window makeKeyAndVisible];
     
-    
     /*初始化数据库**/
     [BaseDataBaseModel initDataBase:@"test1" dataSheets:@[@"Discovery"] operation:nil];
     
     /*监控网络状态**/
     [self monitorNetworkStatus];
     
-
     return YES;
 }
 

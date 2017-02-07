@@ -29,6 +29,7 @@
 #import "UMSocialWechatHandler.h"
 #import <UShareUI/UShareUI.h>
 #import "UMSocialUniqueIdHandler.h"
+#import "YYFPSLabel.h"
 
 #import "BaseDataSource.h"
 #import "BaseNavigationController.h"

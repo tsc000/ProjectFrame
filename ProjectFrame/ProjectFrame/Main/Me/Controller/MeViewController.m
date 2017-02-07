@@ -10,6 +10,9 @@
 
 @interface MeViewController ()
 
+@property (nonatomic, strong) YYFPSLabel *fpsLabel;
+
+
 @end
 
 @implementation MeViewController
@@ -20,6 +23,14 @@
     self.navigationItem.title = @"我的";
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    if (!_fpsLabel) {
+        _fpsLabel = [YYFPSLabel new];
+        _fpsLabel.frame=CGRectMake(20, 80, 30, 30);
+        [_fpsLabel sizeToFit];
+        _fpsLabel.alpha = 0.6;
+        [self.view addSubview:_fpsLabel];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

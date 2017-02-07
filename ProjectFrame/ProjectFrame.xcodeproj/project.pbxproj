@@ -56,6 +56,7 @@
 		596AE1931E2F67C500D069AF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596AE1921E2F67C500D069AF /* HomeViewController.m */; };
 		5987D9261E495CDB000921EB /* libAPOpenSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5987D9231E495CDB000921EB /* libAPOpenSdk.a */; };
 		5987D9271E495CDB000921EB /* libSocialAlipayShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5987D9241E495CDB000921EB /* libSocialAlipayShare.a */; };
+		5987D9301E497574000921EB /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5987D92F1E497574000921EB /* YYFPSLabel.m */; };
 		59A54A371E2CA236007EE5BE /* ProjectFrameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54A361E2CA236007EE5BE /* ProjectFrameTests.m */; };
 		59A54A421E2CA236007EE5BE /* ProjectFrameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A54A411E2CA236007EE5BE /* ProjectFrameUITests.m */; };
 		59A54A631E2CA3C2007EE5BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59A54A621E2CA3C2007EE5BE /* Assets.xcassets */; };
@@ -192,7 +193,6 @@
 		595549B01E48439600CDC8A7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		595549B21E4843A000CDC8A7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		595549B41E4843FC00CDC8A7 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		595549B61E4848B900CDC8A7 /* CommonContants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonContants.h; sourceTree = "<group>"; };
 		596AE1911E2F67C500D069AF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		596AE1921E2F67C500D069AF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		5987D9211E495CDB000921EB /* APOpenAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOpenAPI.h; sourceTree = "<group>"; };
@@ -200,6 +200,12 @@
 		5987D9231E495CDB000921EB /* libAPOpenSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAPOpenSdk.a; sourceTree = "<group>"; };
 		5987D9241E495CDB000921EB /* libSocialAlipayShare.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialAlipayShare.a; sourceTree = "<group>"; };
 		5987D9251E495CDB000921EB /* UMSocialAlipayHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialAlipayHandler.h; sourceTree = "<group>"; };
+		5987D9291E49641E000921EB /* CommonContants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonContants.h; sourceTree = "<group>"; };
+		5987D92A1E49641E000921EB /* EnumerateContants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnumerateContants.h; sourceTree = "<group>"; };
+		5987D92B1E49641E000921EB /* NotificationContants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationContants.h; sourceTree = "<group>"; };
+		5987D92C1E49641E000921EB /* TargetConfigContants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetConfigContants.h; sourceTree = "<group>"; };
+		5987D92E1E497574000921EB /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		5987D92F1E497574000921EB /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
 		59A54A191E2CA236007EE5BE /* ProjectFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A54A321E2CA236007EE5BE /* ProjectFrameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectFrameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A54A361E2CA236007EE5BE /* ProjectFrameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectFrameTests.m; sourceTree = "<group>"; };
@@ -252,9 +258,6 @@
 		59A54B591E2DC36F007EE5BE /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		59A54B5A1E2DC36F007EE5BE /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		59A54B5D1E2DE68E007EE5BE /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		59A54B601E2DEF00007EE5BE /* NotificationContants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationContants.h; sourceTree = "<group>"; };
-		59A54B611E2DEF15007EE5BE /* EnumerateContants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumerateContants.h; sourceTree = "<group>"; };
-		59A54B621E2DEF3B007EE5BE /* TargetConfigContants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TargetConfigContants.h; sourceTree = "<group>"; };
 		59A54B681E2DF10F007EE5BE /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		59A54B691E2DF10F007EE5BE /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		59A54B6B1E2DF361007EE5BE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -621,6 +624,26 @@
 			path = AlipayShare;
 			sourceTree = "<group>";
 		};
+		5987D9281E49641E000921EB /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				5987D9291E49641E000921EB /* CommonContants.h */,
+				5987D92A1E49641E000921EB /* EnumerateContants.h */,
+				5987D92B1E49641E000921EB /* NotificationContants.h */,
+				5987D92C1E49641E000921EB /* TargetConfigContants.h */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		5987D92D1E497574000921EB /* YYFPSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				5987D92E1E497574000921EB /* YYFPSLabel.h */,
+				5987D92F1E497574000921EB /* YYFPSLabel.m */,
+			);
+			path = YYFPSLabel;
+			sourceTree = "<group>";
+		};
 		59A54A101E2CA236007EE5BE = {
 			isa = PBXGroup;
 			children = (
@@ -677,8 +700,8 @@
 		59A54A4F1E2CA339007EE5BE /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				5987D9281E49641E000921EB /* Constant */,
 				59A54B641E2DF001007EE5BE /* Category */,
-				59A54B5F1E2DEEC7007EE5BE /* Const */,
 				59A54B5C1E2DE5EC007EE5BE /* Macros */,
 				59A54B4E1E2DB48E007EE5BE /* NetworkTool */,
 			);
@@ -731,6 +754,7 @@
 		59A54A591E2CA339007EE5BE /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				5987D92D1E497574000921EB /* YYFPSLabel */,
 				59480DD71E31BC9B00891C91 /* FCModel */,
 				59A54B581E2DC36F007EE5BE /* JSONKit */,
 				59A54AF91E2CBDB5007EE5BE /* MJRefresh */,
@@ -890,17 +914,6 @@
 				59A54B5D1E2DE68E007EE5BE /* Constants.h */,
 			);
 			path = Macros;
-			sourceTree = "<group>";
-		};
-		59A54B5F1E2DEEC7007EE5BE /* Const */ = {
-			isa = PBXGroup;
-			children = (
-				59A54B601E2DEF00007EE5BE /* NotificationContants.h */,
-				59A54B611E2DEF15007EE5BE /* EnumerateContants.h */,
-				59A54B621E2DEF3B007EE5BE /* TargetConfigContants.h */,
-				595549B61E4848B900CDC8A7 /* CommonContants.h */,
-			);
-			path = Const;
 			sourceTree = "<group>";
 		};
 		59A54B641E2DF001007EE5BE /* Category */ = {
@@ -1223,6 +1236,7 @@
 				59480DCA1E31ADAC00891C91 /* BaseNavigationController.m in Sources */,
 				59A54B2C1E2CBDB5007EE5BE /* MJRefreshAutoNormalFooter.m in Sources */,
 				59A54B2B1E2CBDB5007EE5BE /* MJRefreshAutoGifFooter.m in Sources */,
+				5987D9301E497574000921EB /* YYFPSLabel.m in Sources */,
 				59A54B311E2CBDB5007EE5BE /* MJRefreshGifHeader.m in Sources */,
 				59480DE81E31E18400891C91 /* Discovery.m in Sources */,
 				59A54B571E2DB80C007EE5BE /* NetworkTool.m in Sources */,
