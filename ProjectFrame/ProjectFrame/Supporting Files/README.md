@@ -41,7 +41,7 @@
 存放第三方库,现已经添加MJRefresh和JSONKit
 
 
-
+#本工程在是xcode 8.2下建立的
 重新建立工程的话，要将工程文件夹下所有文件删除，将示例文件夹下的目录拖进去
 再把Podfile文件拖进去，
 1 将Podfile中的名字改成工程的名字，要改四处
@@ -50,6 +50,6 @@
 4 添加arc
 5 添加pods
 6 支付宝分享要关闭bitcode
-
+7 build phase里面对应原始工程设计表态库
 
 可能需要在general -> identity 下面导入plist文件
